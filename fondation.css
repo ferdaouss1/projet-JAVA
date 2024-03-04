@@ -1,0 +1,94 @@
+*{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+a{
+    color: white;
+}
+header{
+    background-color: rgba(54, 33, 19, 0.781);
+    display:flex;
+    width: 100%;
+    align-items: center;
+    height: 50px;
+    justify-content: space-between;
+    padding: 0 10%;
+     
+}
+header img{
+    max-width: 80px;
+    max-height: 70px;
+}
+header a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: large;
+    position: relative;
+}
+header a::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left:0;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin:right;
+    transition:transform 300ms ease-in;
+}
+header a:hover::after{
+    transform: scaleX(1);
+    transform-origin:left ;
+}
+
+section{height: 90vh;}
+
+.fondation{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+    width: 70%;
+    margin-left: 12em;
+    position: relative;
+
+    
+   
+}
+
+
+.lipstick div{
+    position: relative;
+}
+span{
+    font-size:7rem;
+    font-weight: 300;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(silver,rgba(54, 33, 19, 0.37),black);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 4.5em;
+    
+
+}
+.fondation{
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    height: 200px;
+}
+.fondation img{
+    width: 200px;
+    height: 200px;
+}
+.fondation .SBF{
+    color: black;
+    
+}
