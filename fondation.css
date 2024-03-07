@@ -48,7 +48,7 @@ header a:hover::after{
     transform-origin:left ;
 }
 
-section{height: 90vh;}
+section{height: 100vh;}
 
 .fondation{
     display:grid;
@@ -83,12 +83,16 @@ span{
     margin: 0;
     width: 200px;
     height: 200px;
+    display: flex;
+    flex-direction: column;
 }
 .fondation img{
     width: 200px;
     height: 200px;
 }
 .fondation .SBF{
-    color: black;
-    
+    color: rgb(232, 7, 7);
+    display: flex;
+    justify-content: center;
+    width: 200px;
 }
