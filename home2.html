@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>makeup for you</title>
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <style>
     body{
         padding: 0;
@@ -94,6 +96,72 @@ header .beauty a{
 header .beauty a:hover{
    border: solid 2px #fff;
 }
+.center-text h2{
+    color: black;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.center-text span{
+    color: #ee1c47;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,auto));
+    gap: 2rem;
+    
+}
+.row{
+    position: relative;
+    transition: all .40s;
+}
+.row img{
+    width: 100%;                  
+    height: 300px;
+    transition: all .40s;
+}
+.row img:hover{
+    transform: scale(0.9);
+}
+.product-text h5{
+    position: absolute;
+    top: -20px;
+    left: -1px;
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #27b737;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+.heart-icon{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    color: black;
+}
+.heart-icon:hover{
+    color: #ee1c47;
+}
+.ratting i {
+    color: #FF8C00;
+    font-size: 18px;
+}
+.price h4{
+    color: #111;
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-top: 4px;
+}
+.price p{
+     color: #151515;
+     font-size: 14px;
+     font-weight: 600;
+     margin-top: -10px;
+}
 
 
     </style>
@@ -102,7 +170,7 @@ header .beauty a:hover{
     <nav class="content">
      
         <p>
-          A MORE BEAUTIFUL FACE
+          A MORE BEAUTIFUL APPEARANCE
         </p>
         <div class="ferdaouss">
             <div class="app">
@@ -138,9 +206,498 @@ header .beauty a:hover{
     <div class="beauty">
         <h1>beauty</h1>
         <p>Everything you need to look flawless and radiant</p>
-        <a href="#">shop beauty</a>
+        <a href="#trending">shop beauty</a>
      </div>
    </header>
+   <section  class="trending-product"    id="trending">
+    <div class="center-text">
+       <h2>our trending <span>products</span></h2>
+    </div>
+    <div class="products">
+      <div class="row">
+          <img src="home/c14e47951a59819e77e955c6a69a02d1.jpg" alt="">
+          <div class="product-text">
+              <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+              <i class='bx bx-heart'></i>
+          </div>
+          <div class="ratting">
+             
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star-half' ></i>
+          </div>
+          <div class="price">
+              <h4>NUXE</h4>
+              <p>$99-$129</p>
+          </div>
+      </div>
+      <div class="row">
+          <img src="home/f2b84e3590c8ba9621462d30f3fe147f.jpg" alt="">
+          <div class="product-text">
+              <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+              <i class='bx bx-heart'></i>
+          </div>
+          <div class="ratting">
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star-half' ></i>
+          </div>
+          <div class="price">
+              <h4>Half Running set</h4>
+              <p>$99-$129</p>
+          </div>
+      </div>
+      <div class="row">
+          <img src="home/s.jpg" alt="">
+          <div class="product-text">
+              <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+              <i class='bx bx-heart'></i>
+          </div>
+          <div class="ratting">
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star-half' ></i>
+          </div>
+          <div class="price">
+              <h4>TAWONI</h4>
+              <p>$99-$129</p>
+          </div>
+      </div>
+      <div class="row">
+          <img src="home/96913ec802cbfb9c577af0dc199579fa.jpg" alt="">
+          <div class="product-text">
+              <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+              <i class='bx bx-heart'></i>
+          </div>
+          <div class="ratting">
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star-half' ></i>
+          </div>
+          <div class="price">
+              <h4>BLUR</h4>
+              <p>$99-$129</p>
+          </div>
+      </div>
+      <div class="row">
+          <img src="home/a5a88c03cb3618baf6345c8be0ab8047.jpg" alt="">
+          <div class="product-text">
+              <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+              <i class='bx bx-heart'></i>
+          </div>
+          <div class="ratting">
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star-half' ></i>
+          </div>
+          <div class="price">
+              <h4>PROVENCE</h4>
+              <p>$99-$129</p>
+          </div>
+      </div>
+      <div class="row">
+          <img src="home/792076ce97096d831ca5c88598c65726.jpg"   alt="">
+          <div class="product-text">
+              <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+              <i class='bx bx-heart'></i>
+          </div>
+          <div class="ratting">
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star-half' ></i>
+          </div>
+          <div class="price">
+              <h4>Half Running set</h4>
+              <p>$99-$129</p>
+          </div>
+      </div>
+      <div class="row">
+          <img src="home/d38fa7ae60ab9c909f93dc49671d9cea.jpg" alt="">
+          <div class="product-text">
+              <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+              <i class='bx bx-heart'></i>
+          </div>
+          <div class="ratting">
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star-half' ></i>
+          </div>
+          <div class="price">
+              <h4>GORGET THE FILLER</h4>
+              <p>$99-$129</p>
+          </div>
+      </div>
+      <div class="row">
+          <img src="home/51900ae11dac897ee2b52798d66e09a8.jpg" alt="">
+          <div class="product-text">
+              <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+              <i class='bx bx-heart'></i>
+          </div>
+          <div class="ratting">
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star' ></i>
+              <i class='bx bxs-star-half' ></i>
+          </div>
+          <div class="price">
+              <h4>HEALTHY CLOW</h4>
+              <p>$99-$129</p>
+          </div>
+       </div>
+       <div class="row">
+        <img src="home/83c1304168f6a4cfab69bcac8e61b1c6.jpg" alt="">
+        <div class="product-text">
+            <h5>sale</h5>
+        </div>
+        <div class="heart-icon">
+            <i class='bx bx-heart'></i>
+        </div>
+        <div class="ratting">
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star-half' ></i>
+        </div>
+        <div class="price">
+            <h4>GORGET THE FILLER</h4>
+            <p>$99-$129</p>
+        </div>
+    </div>
+    <div class="row">
+        <img src="home/a0c187d6694ecd97cbf7fe6d03dcf906.jpg" alt="">
+        <div class="product-text">
+            <h5>sale</h5>
+        </div>
+        <div class="heart-icon">
+            <i class='bx bx-heart'></i>
+        </div>
+        <div class="ratting">
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star-half' ></i>
+        </div>
+        <div class="price">
+            <h4>HEALTHY CLOW</h4>
+            <p>$99-$129</p>
+        </div>
+     </div>
+     <div class="row">
+        <img src="home/2cfb3bca5ba20e903202b1f84fa09aea.jpg" alt="">
+        <div class="product-text">
+            <h5>sale</h5>
+        </div>
+        <div class="heart-icon">
+            <i class='bx bx-heart'></i>
+        </div>
+        <div class="ratting">
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star-half' ></i>
+        </div>
+        <div class="price">
+            <h4>GORGET THE FILLER</h4>
+            <p>$99-$129</p>
+        </div>
+    </div>
+    <div class="row">
+        <img src="home/03125fb40f35df900f8ffca99f0cbec3.jpg" alt="">
+        <div class="product-text">
+            <h5>sale</h5>
+        </div>
+        <div class="heart-icon">
+            <i class='bx bx-heart'></i>
+        </div>
+        <div class="ratting">
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star-half' ></i>
+        </div>
+        <div class="price">
+            <h4>HEALTHY CLOW</h4>
+            <p>$99-$129</p>
+        </div>
+     </div>
+     <div class="row">
+        <img src="home/3e5524c802d41467ed71b528fb367021.jpg" alt="">
+        <div class="product-text">
+            <h5>sale</h5>
+        </div>
+        <div class="heart-icon">
+            <i class='bx bx-heart'></i>
+        </div>
+        <div class="ratting">
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star-half' ></i>
+        </div>
+        <div class="price">
+            <h4>GORGET THE FILLER</h4>
+            <p>$99-$129</p>
+        </div>
+    </div>
+    <div class="row">
+        <img src="home/f6ab4619192636b45fdeaaf7575f3709.jpg" alt="">
+        <div class="product-text">
+            <h5>sale</h5>
+        </div>
+        <div class="heart-icon">
+            <i class='bx bx-heart'></i>
+        </div>
+        <div class="ratting">
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star-half' ></i>
+        </div>
+        <div class="price">
+            <h4>HEALTHY CLOW</h4>
+            <p>$99-$129</p>
+        </div>
+     </div>
+     <div class="row">
+        <img src="home/9ae4ddf96a43e01a6479308a1dbc3cdc.jpg" alt="">
+        <div class="product-text">
+            <h5>sale</h5>
+        </div>
+        <div class="heart-icon">
+            <i class='bx bx-heart'></i>
+        </div>
+        <div class="ratting">
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star-half' ></i>
+        </div>
+        <div class="price">
+            <h4>GORGET THE FILLER</h4>
+            <p>$99-$129</p>
+        </div>
+    </div>
+    <div class="row">
+        <img src="home/69942a3e23aaea654a2974464c32700a.jpg" alt="">
+        <div class="product-text">
+            <h5>sale</h5>
+        </div>
+        <div class="heart-icon">
+            <i class='bx bx-heart'></i>
+        </div>
+        <div class="ratting">
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star-half' ></i>
+        </div>
+        <div class="price">
+            <h4>HEALTHY CLOW</h4>
+            <p>$99-$129</p>
+        </div>
+     </div>
+     <div class="row">
+        <img src="home/233ef1e441d49c74f7aacf758e3a26f4.jpg" alt="">
+        <div class="product-text">
+            <h5>sale</h5>
+        </div>
+        <div class="heart-icon">
+            <i class='bx bx-heart'></i>
+        </div>
+        <div class="ratting">
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star-half' ></i>
+        </div>
+        <div class="price">
+            <h4>GORGET THE FILLER</h4>
+            <p>$99-$129</p>
+        </div>
+    </div>
+    <div class="row">
+        <img src="home/3612c02368d3983c63e5a2a5ddb1d43d.jpg" alt="">
+        <div class="product-text">
+            <h5>sale</h5>
+        </div>
+        <div class="heart-icon">
+            <i class='bx bx-heart'></i>
+        </div>
+        <div class="ratting">
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star-half' ></i>
+        </div>
+        <div class="price">
+            <h4>HEALTHY CLOW</h4>
+            <p>$99-$129</p>
+        </div>
+     </div>
+     <div class="row">
+        <img src="home/28983249704ee25e1341230bd31bb80b (1).jpg" alt="">
+        <div class="product-text">
+            <h5>sale</h5>
+        </div>
+        <div class="heart-icon">
+            <i class='bx bx-heart'></i>
+        </div>
+        <div class="ratting">
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star-half' ></i>
+        </div>
+        <div class="price">
+            <h4>GORGET THE FILLER</h4>
+            <p>$99-$129</p>
+        </div>
+    </div>
+    <div class="row">
+        <img src="home/8c8c9998fb92cf9402fc758dde4d74d9.jpg" alt="">
+        <div class="product-text">
+            <h5>sale</h5>
+        </div>
+        <div class="heart-icon">
+            <i class='bx bx-heart'></i>
+        </div>
+        <div class="ratting">
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star-half' ></i>
+        </div>
+        <div class="price">
+            <h4>HEALTHY CLOW</h4>
+            <p>$99-$129</p>
+        </div>
+     </div>
+     <div class="row">
+        <img src="home/2ddbfba1fb12e480d11f5f50449d54df.jpg" alt="">
+        <div class="product-text">
+            <h5>sale</h5>
+        </div>
+        <div class="heart-icon">
+            <i class='bx bx-heart'></i>
+        </div>
+        <div class="ratting">
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star-half' ></i>
+        </div>
+        <div class="price">
+            <h4>GORGET THE FILLER</h4>
+            <p>$99-$129</p>
+        </div>
+    </div>
+    <div class="row">
+        <img src="home/8917bc526591850072b02e540526ee20.jpg" alt="">
+        <div class="product-text">
+            <h5>sale</h5>
+        </div>
+        <div class="heart-icon">
+            <i class='bx bx-heart'></i>
+        </div>
+        <div class="ratting">
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star-half' ></i>
+        </div>
+        <div class="price">
+            <h4>HEALTHY CLOW</h4>
+            <p>$99-$129</p>
+        </div>
+     </div>
+     <div class="row">
+        <img src="home/b68d8f9753e0e39a322893e989215513.jpg" alt="">
+        <div class="product-text">
+            <h5>sale</h5>
+        </div>
+        <div class="heart-icon">
+            <i class='bx bx-heart'></i>
+        </div>
+        <div class="ratting">
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star-half' ></i>
+        </div>
+        <div class="price">
+            <h4>GORGET THE FILLER</h4>
+            <p>$99-$129</p>
+        </div>
+    </div>
+    <div class="row">
+        <img src="home/a062f1ebdd825694a034bb81fdff167c.jpg" alt="">
+        <div class="product-text">
+            <h5>sale</h5>
+        </div>
+        <div class="heart-icon">
+            <i class='bx bx-heart'></i>
+        </div>
+        <div class="ratting">
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star-half' ></i>
+        </div>
+        <div class="price">
+            <h4>HEALTHY CLOW</h4>
+            <p>$99-$129</p>
+        </div>
+     </div>
+     
+    </div>
+</section>
 
   </body>
 </html>

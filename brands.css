@@ -5,6 +5,9 @@
     scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
+    border: none;
+    text-transform: capitalize;
+    transition: .2s linear;
 }
 
 header{

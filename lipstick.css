@@ -83,11 +83,11 @@ span{
 
 }
 
-.lipstick div{
+ .lipstick div{
     padding: 40% 0 0 0; 
     overflow:hidden;   
     cursor:pointer;
-}
+} 
 .lipstick div h2{
     position: absolute;
     bottom: 0;
@@ -95,29 +95,31 @@ span{
 .lipstick div:hover h2{
     transform: translateY(-120px);
     transition: transform 500ms;
-}
+} 
 
 .lipstick :nth-child(3):hover h2{
     transform: translateY(-250px);
     transition: transform 600ms;
 }
+
 .lipstick div p{
     position: absolute;
     bottom: -50%;
-}
-.lipstick div:hover p{
+} 
+  .lipstick div:hover p{
     transform: translateY(-8rem);
     transition: transform 500ms ease;
     margin: 10% 0 0 0;
-}
-.lipstick :nth-child(3):hover p{
-    transform: translateY(-21em);
+}  
+ .lipstick :nth-child(2):hover p,
+.lipstick :nth-child(4):hover p{
+    transform: translateY(-6rem);
     transition: transform 600ms ease;
     margin: 10% 0 0 0;
    
-}
-.lipstick :nth-child(2):hover p,
-.lipstick :nth-child(4):hover p{
+}  
+.lipstick :nth-child(3):hover p{
+
     transform: translateY(-7rem);
     transition: transform 500ms ease;
     margin: 10% 0 0 0;
@@ -158,4 +160,3 @@ span{
     opacity: 0.5;
     transform-origin: bottom;
 }
-

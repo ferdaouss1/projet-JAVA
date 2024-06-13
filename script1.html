@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;font-family: Andalus;">inscription</h1>
+        <div class="mb-4">
+            <label for="name" class="form-lebel">CIN:</label><br>
+            <input type="text" placeholder="entrer le cin" class="form-control" id="cin">
+            <span class="login1" id="s1"></span>
+        </div>
+        <div class="mb-4">
+            <label for="name" class="form-lebel">Nom:</label><br>
+            <input type="text" placeholder="entrer le nom" class="form-control" id="nom">
+            <span class="login2" id="s2"></span>
+        </div>
+        <div class="mb-4">
+            <label for="name" class="form-lebel">Prenom:</label><br>
+            <input type="text" placeholder="entrer le prenom" class="form-control" id="prenom">
+            <span class="login3" id="s3"></span>
+        </div>
+      
+        <div class="mb-4">
+            <label for="name" class="form-lebel">Adress:</label><br>
+            <input type="text" placeholder="entrer le adress" class="form-control" id="adress">
+            <span class="login5" id="s5" ></span>
+        </div>
+        <div class="mb-4">
+            <label for="name" class="form-lebel">Telephone:</label><br>
+            <input type="tel" placeholder="entrer le telephone" class="form-control" id="tele">
+            <span class="login6" id="s6"></span>
+        </div>
+        <div class="mb-4">
+            <label for="name" class="form-lebel">E-mail:</label><br>
+            <input type="email" placeholder="entrer le email" class="form-control" id="email">
+            <span class="login7" id="s7"></span>
+        </div>
+        <div class="mb-4">
+            <label for="name" class="form-lebel">Mot de passe:</label><br>
+            <input type="password" placeholder="entrer le mot de passe" class="form-control" id="psw">
+            <span class="login8" id="s8"></span>
+        </div>
+       
+        <div class="mb-4">
+            <button type="button" class="btn btn-outline-info" id="btn-envoyer">Envoyer</button>
+        </div>
+    </div>
+    <script >
+
+    class validation_formulaire{
+        constructor(cin,nom,prenom,adress,email,psw,tele){
+            this.cin = cin
+            this.nom = nom
+            this.prenom = prenom
+            this.adress = adress
+            this.email = email
+            this.psw = psw
+            this.tele = tele
+          
+        }
+    }
+
+
+    let formulaires = []
+    document.getElementById("btn-envoyer").addEventListener("click",()=>{
+        let cin=document.getElementById('cin').value,
+        nom=document.getElementById('nom').value,
+        prenom=document.getElementById('prenom').value,
+        adress=document.getElementById('adress').value,
+        email=document.getElementById('email').value,
+        psw=document.getElementById('psw').value,
+        tele=document.getElementById('tele').value
+       
+
+
+    let formulaire = new validation_formulaire(cin,nom,prenom,adress,email,psw,tele)
+        formulaires.push(formulaire)
+    
+        console.log(formulaires)
+            //cin
+            if(cin == ""){
+            
+
+                document.getElementById("cin").classList.add("error")
+                document.querySelector(".login1").innerHTML = "entrer votre cin"
+            document.querySelector(".login1").classList.remove("login1")
+            }
+            else if(cin.length < 3 || cin.length > 25){
+
+                document.querySelector(".login1").innerHTML = "votre CIN doit être compris entre 3 et 25"
+                document.querySelector(".login1").classList.remove("login1");
+            } 
+            else{
+                document.getElementById("cin").classList.remove("error") 
+                document.getElementById("s1").classList.add("login1");
+            
+            }
+            
+            //nom
+            if(nom == ""){
+            
+
+                document.getElementById("nom").classList.add("error")
+                document.querySelector(".login2").innerHTML = "entrer votre nom"
+            document.querySelector(".login2").classList.remove("login2")
+            }
+            else{
+                document.getElementById("nom").classList.remove("error") 
+                document.getElementById("s2").classList.add("login2");
+            
+            }
+            
+            //prenom
+            if(prenom == ""){
+            
+
+                document.getElementById("prenom").classList.add("error")
+                document.querySelector(".login3").innerHTML = "entrer votre prenom"
+            document.querySelector(".login3").classList.remove("login3")
+            }
+            else{
+                document.getElementById("prenom").classList.remove("error") 
+                document.getElementById("s3").classList.add("login3");
+            
+            }
+
+           
+
+            //adress
+            if(adress == ""){
+            
+
+                document.getElementById("adress").classList.add("error")
+                document.querySelector(".login5").innerHTML = "entrer votre adress"
+            document.querySelector(".login5").classList.remove("login5")
+            }
+            else{
+                document.getElementById("adress").classList.remove("error") 
+                document.getElementById("s5").classList.add("login5");
+            
+            }
+            
+            // email
+            
+                
+            if( email == ""){
+            
+
+                document.getElementById("email").classList.add("error")
+                document.querySelector(".login7").innerHTML = "entrer votre email"
+            document.querySelector(".login7").classList.remove("login7")
+            }
+        
+            else{
+                document.getElementById("email").classList.remove("error") 
+                document.getElementById("s7").classList.add("login7");
+            
+            }
+
+
+            //psw
+            if( psw == ""){
+            
+
+                document.getElementById("psw").classList.add("error")
+                document.querySelector(".login8").innerHTML = "entrer votre mot de passe"
+            document.querySelector(".login8").classList.remove("login8")
+            }
+            else{
+                document.getElementById("email").classList.remove("error") 
+                document.getElementById("s8").classList.add("login8");
+            
+            }
+
+            //tele
+            if( tele == ""){
+            
+
+                document.getElementById("tele").classList.add("error")
+                document.querySelector(".login6").innerHTML = "entrer votre tele"
+            document.querySelector(".login6").classList.remove("login6")
+            }
+            else{
+                document.getElementById("email").classList.remove("error") 
+                document.getElementById("s6").classList.add("login6");
+            
+            }
+            vider()
+            
+
+    })
+
+    function vider(){
+        let cin=document.getElementById('cin').value="",
+        nom=document.getElementById('nom').value="",
+        prenom=document.getElementById('prenom').value="",
+        adress=document.getElementById('adress').value="",
+        email=document.getElementById('email').value="",
+        psw=document.getElementById('psw').value="",
+        tele=document.getElementById('tele').value=""
+    }
+
+
+
+    </script>
+</body>
+</html>
